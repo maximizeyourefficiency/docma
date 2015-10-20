@@ -3,7 +3,7 @@
 	'use strict';
 
 	angular
-		.module('StraDocMaApp')
+		.module('DocMaApp')
 		.factory('kostenstelle', kostenstelle);
 
 	function kostenstelle() {
@@ -11,12 +11,12 @@
 		function getKostenstellen() {
 			return [
 				{
-					"name": "Rahmenvertrag LSW Wolfsburg",
-					"value":"lsw_wob"
+					"name": "name1",
+					"value":"namevalue1"
 				},
 				{
-					"name":"Fernwaerme LP7 Autostadt",
-					"value":"lp7as"
+					"name":"name2",
+					"value":"namevalue2"
 				},
 			];
 		}
