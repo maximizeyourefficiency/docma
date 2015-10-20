@@ -1,0 +1,9 @@
+<body class="ng-scope" ng-controller="SearchController as vm">
+    <div class="ngdialog-message">
+        <form novalidate>
+            <h1>Test, eh?</h1>
+            <formly-form model="vm.rental" fields="vm.rentalFields" form="vm.rentalForm">
+                <button type="submit" class="btn btn-primary" ng-disabled="vm.rentalForm.$invalid">Submit</button>
+            </formly-form>
+        </form> 
+    </div>

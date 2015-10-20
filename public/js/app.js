@@ -1,0 +1,1 @@
+angular.module('StraDocMaApp', ['ngRoute', 'ngDialog', 'appRoutes', 'MainCtrl', 'SearchCtrl', 'formly', 'formlyBootstrap']);
