@@ -1,4 +1,4 @@
-angular.module('SearchCtrl', []).controller('SearchController', function ($scope, ngDialog) {
+angular.module('SearchCtrl', []).controller('SearchController', function ($scope, ngDialog, kostenstelle) {
 'use strict';
     var vm = this;
 
@@ -16,7 +16,7 @@ angular.module('SearchCtrl', []).controller('SearchController', function ($scope
             templateOptions: {
                 type: 'text',
                 label: 'FCO',
-                placeholder: 'FCO eingeben',
+                placeholder: 'FCO input',
                 required: true
             }
         },
@@ -26,9 +26,16 @@ angular.module('SearchCtrl', []).controller('SearchController', function ($scope
             templateOptions: {
                 type: 'text',
                 label: 'KST',
-                placeholder: 'Kostenstelle eingeben',
+                placeholder: 'KST input',
                 required: true
             }
         },
     ];
+        $scope.test = function () {
+        ngDialog.open({
+					template: 'firstDialogId',
+					//controller: 'SearchController',
+					className: 'ngdialog-theme-default'
+		});
+    };
 });
