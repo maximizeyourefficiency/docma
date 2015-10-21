@@ -1,9 +1,16 @@
-<body class="ng-scope" ng-controller="SearchController as vm">
-    <div class="ngdialog-message">
-        <form novalidate>
-            <h1>Test, eh?</h1>
-            <formly-form model="vm.search" fields="vm.searchFields" form="vm.searchForm">
-                <button type="submit" class="btn btn-primary" ng-disabled="vm.searchForm.$invalid">Submit</button>
+<html>
+    <head></head>
+    <body class="ng-scope" ng-controller="SearchController as vm">
+        <div class="ngdialog-message">
+            <form novalidate>
+            <h3>You search something?</h3>
+                <formly-form model="vm.search" fields="vm.searchFields" form="vm.searchForm">
+                <button type="submit" class="ngdialog-button ngdialog-button-primary" ng-disabled="vm.searchForm.$invalid" >Submit</button>
+                <button type="button" class="ngdialog-button ngdialog-button-secondary" ng-click="closeThisDialog()">Close</button>
             </formly-form>
-        </form> 
-    </div>
+            </form>
+        </div>
+    </body>
+</html>
+
+	

@@ -1,4 +1,4 @@
-angular.module('SearchCtrl', []).controller('SearchController', function (kostenstelle) {
+angular.module('SearchCtrl', []).controller('SearchController', function ($scope, ngDialog) {
 'use strict';
     var vm = this;
 

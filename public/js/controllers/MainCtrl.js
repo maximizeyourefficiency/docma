@@ -1,14 +1,12 @@
-angular.module('MainCtrl', []).controller('MainController', function($scope, $rootScope, ngDialog) {
-    $scope.openPlain = function () {
-	$rootScope.theme = 'ngdialog-theme-plain';
+angular.module('MainCtrl', []).controller('MainController', function($scope, ngDialog) {
+    $scope.open = function () {
         ngDialog.open({
 		//template: 'firstDialogId',
         template: 'views/searchdialog.html',
 		controller: 'SearchController',
-		className: 'ngdialog-theme-plain',
+        className: 'ngdialog-theme-plain',
+        scope : $scope,
 		closeByDocument: false
 		});
     };
-
 });
-
